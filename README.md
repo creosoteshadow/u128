@@ -1,3 +1,7 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![C++17](https://img.shields.io/badge/C++-17-blue.svg)]()
+[![Header-only](https://img.shields.io/badge/header--only-yes-green.svg)]()
+
 # u128
 Header-only, portable 128-bit unsigned integer for C++17+. Fast intrinsics when available, verified 64×64→128 mul fallback. Full operators, constexpr where possible.
 
