@@ -2,7 +2,7 @@
 // file u128.h
 
 // Set to 1 to enable verification, 0 otherwise
-#define EnablePortableMultiplyVerification 1
+#define EnablePortableMultiplyVerification 0
 
 // struct uint128_t 
 //      Holds lo and hi 64 bit components of a 128 bit unsigned integer.
