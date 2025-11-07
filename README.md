@@ -27,24 +27,24 @@ A single-header, header-only implementation of a **128-bit unsigned integer** (`
 
 ## Quick start
 
-#include "u128.h"
-#include <iostream>
-
-int main() {
-    using namespace u128;
-
-    u128 a = 0xFFFFFFFFFFFFFFFFULL;          // 2⁶⁴-1
-    u128 b = a * a;                           // (2⁶⁴-1)² → wraps
-    std::cout << a << " * " << a << " = " << b << '\n';
-
-    u128 c = (u128(1) << 100) + 42;
-    std::cout << "1<<100 + 42 = " << c << '\n';
-}
+    #include "u128.h"
+    #include <iostream>
+    
+    int main() {
+        using namespace u128;
+    
+        u128 a = 0xFFFFFFFFFFFFFFFFULL;          // 2⁶⁴-1
+        u128 b = a * a;                           // (2⁶⁴-1)² → wraps
+        std::cout << a << " * " << a << " = " << b << '\n';
+    
+        u128 c = (u128(1) << 100) + 42;
+        std::cout << "1<<100 + 42 = " << c << '\n';
+    }
 
 Output (hex, zero-padded to 32 digits):
 
-0x0000000000000000ffffffffffffffff * 0x0000000000000000ffffffffffffffff = 0x00000000000000000000000000000001
-1<<100 + 42 = 0x0000000000000010000000000000002a
+    0x0000000000000000ffffffffffffffff * 0x0000000000000000ffffffffffffffff = 0x00000000000000000000000000000001
+    1<<100 + 42 = 0x0000000000000010000000000000002a
 
 ## API oveview
 
